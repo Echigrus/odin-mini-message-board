@@ -1,0 +1,20 @@
+{
+  "name": "odin-mini-message-board",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=odin-mini-message-board:* node ./bin/www",
+    "startDev": "nodemon .bin/www"
+  },
+  "dependencies": {
+    "debug": "^4.4.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "http-errors": "^2.0.1",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
