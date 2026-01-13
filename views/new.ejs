@@ -1,0 +1,31 @@
+<!-- index.ejs -->
+<html>
+  <head>
+    <title>New Message</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <form class="newMsgForm" method="POST" action="/new">
+      <div class="formInput">
+        <label for="user">Name:</label>
+        <input
+          id="user"
+          name="user"
+          minlength="3"
+          maxlength="20"
+          placeholder="John"
+          required
+        />
+      </div>
+      <div class="formInput">
+        <label for="text">Message:</label>
+        <textarea id="text" name="text" minlength="5" maxlength="200" required>
+What a nice weather</textarea
+        >
+      </div>
+      <input type="submit" value="Send Message" />
+    </form>
+    <%- include('footer') %>
+  </body>
+</html>

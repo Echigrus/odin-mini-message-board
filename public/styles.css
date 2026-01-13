@@ -1,0 +1,59 @@
+/* public/styles.css */
+body {
+  background-color: #dfd;
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+
+  .messageBoard {
+    width: 100%;
+
+    .messageList {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-height: 600px;
+      overflow-y: auto;
+      row-gap: 6px;
+      width: 360px;
+
+      .message {
+        border: 1px solid black;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        row-gap: 4px;
+
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .newMsgForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow-y: auto;
+    row-gap: 6px;
+    width: 360px;
+
+    .formInput {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+
+      label {
+        font-weight: 700;
+      }
+    }
+  }
+
+  footer {
+    margin: auto;
+    margin-bottom: 0;
+  }
+}
